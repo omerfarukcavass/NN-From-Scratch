@@ -65,7 +65,7 @@ So, each neuron determines which side a data point locates in this space. When l
  of each one, we obtain the square region above as seen in figure below. So, if all neurons get value less than or equal zero in linear output, 
 that data point should belong to class 1. If any of them has positive value, then it belongs to class 0.
 
-![relu-decision-2](https://github.com/omerfarukcavass/NN-From-Scratch/blob/main/relu-decision-boundry.png) 
+![relu-decision-2](https://github.com/omerfarukcavass/NN-From-Scratch/blob/main/relu-decision-2.png) 
 
 
 Since ReLu function takes value 0 when the input is less than zero, data points that has zero activation in all four neurons belong to class 1 while data points 
