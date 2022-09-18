@@ -77,6 +77,42 @@ z=𝛽 +𝛽𝑥 +𝛽𝑥 +𝛽𝑥 +𝛽𝑥
 
 In the linear activation of the last layer, z, assume all weights are positive and the bias is negative. We also know that xi are all nonnegative value due to ReLu activation. Then this equation will output negative value if all xi are zero, and positive value when ∑𝑖>0 𝛽𝑖𝑥𝑖 is greater than Bo. If the bias term is sufficiently small (or weights are sufficiently large), then it practically means that if any of the xi is positive, z takes positive value. If z takes negative value, the sigmoid function will give less than 0.5 (class 1) and if z takes positive value, it will give greater than 0.5 (class 0). Thus, we obtained a classifier with four ReLU activated neurons and one sigmoid activated neuron. Also, if we increase number of neurons in hidden layer arbitrarily, we could even approximate a circular decision boundry. Since the problem we had was a classification problem, I used this network structure. Yet, the ReLU activation function can also be used for regression problems. Finally, I didnt use any resource for this example, this example come to my mind when I see the decision boundry in previous question. So, there is no reference for this part.
 
+
+### How to Run the Project: 
+
+In this project Anaconda environment is used. A new environment created for tensorflow to avoid conflicts with other environments.
+I used Anaconda GUI to install keras, pandas, numpy and matplotlib but the command prompt can be used to install
+those packages, as well e.g. "conda install <package_name>"
+
+#### HW Section 1 part 1 : Implement from scratch
+
+To train model run: 
+python hw_section1_part1.py
+
+To evaluate model performance run: 
+python hw_section1_part1_evaluate.py
+
+
+#### HW Section 1 part 2 : Sanity check 
+
+To train model run: 
+python hw_section1_part2.py
+
+To evaluate model performance run: 
+python hw_section1_part2_evaluate.py
+
+
+#### HW Section 2 :  
+To run script run :
+python hw_section2.py
+
+**Note**: train and test data must be in a folder named "data" in this directory. 
+
+**Note**: All scripts and pkl files need to be in the same directory.
+**Note**: tensorflow may give warning in this section about performance issues. I didnt get that warning 
+when I run my scripts in notebook but I encountered that warning after running from command prompt.
+Yet, this warning does not affect proper working of scripts.
+
 ### References: 
 
 [1] Harris, C.R., Millman, K.J., van der Walt, S.J. et al. Array programming with NumPy. Nature 585, 357–362 (2020)
